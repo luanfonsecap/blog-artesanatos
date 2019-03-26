@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tag's -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+	<!-- Bootstrap CSS --> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Estilo Customizado -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<!-- Icon -->
+	<link rel="icon" type="image/x-icon" href="img/icon-head.png">	
+	<!-- Font Awesome -->	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Titulo --> 
+	<title>Bem Bolado - Artesanatos</title>
+</head>
+<body class="background">
+
+
+	<header id="cabecalho"><!-- Inicio Cabecalho -->
+		<div class="fundo-cabecalho col-sm-12 d-flex justify-content-center">
+			<!-- Logo -->
+			<img src="img/logo.png" class="logo mt-2">
+			<span class="sr-only">Bem Bolado Artesanatos</span>
+		</div>
+		<hr class="mt-2 mb-0">
+		<div class="col-sm-12 justify-content-center"><!-- Inicio Navegação -->
+			
+			<div class="navbar navbar-expand-md navbar-light bg-light-50 borda-redonda">
+					<!-- Botão Hamburguer -->
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+						<span class="navbar-toggler-icon"></span>						
+					</button>
+
+					<!-- Menu Navegação -->
+					<div id="nav-target" class="collapse navbar-collapse ml-auto">
+						<ul class="navbar-nav">
+							<li class="nav-item"> 	
+								<a href="index.html" class="nav-link active">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Artesanatos</a>
+							</li>	
+							<li class="nav-item">
+								<a href="" class="nav-link">Especiais	</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Sobre</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link">Contato</a>
+							</li>							
+						</ul>
+					</div>	
+
+					<form class="form-inline">
+						<input type="text" class="form-control" placeholder="Pesquisar...">
+						<span class="sr-only">Pesquisa</span>
+						<button class="ml-1 btn btn-sm btn-outline-primary">
+							<i class="fas fa-search"></i>
+							<span class="sr-only">Buscar</span>
+						</button>
+					</form>			
+			</div>
+		</div><!-- Fim Navegação -->					
+		<hr class="mt-0"><!--Linha -->
+	</header><!-- Fim Cabecalho -->
+	
+	<section id="secao-img"><!-- Seção Imagens -->
+
+		<div class="container bg-white rounded ">	
+
+			<div class="row">
+				<div class="col-sm-12 d-flex justify-content-center mb-3">
+					<h1 class="p-2 sublinhado">Destaques</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 p-3 d-flex justify-content-around">
+
+				<img src="img/artesanato1.jpg" class="img-inicial img-fluid rounded animacao1 d-none d-sm-block">
+				<span class="sr-only">Artesanato</span>
+						
+				<img src="img/ceramica.jpg" class="img-inicial img-fluid rounded animacao2"> <!--Imagem mobile  -->
+				<span class="sr-only">Artesanato</span>
+							
+				<img src="img/artesanato2.jpg" class="img-inicial img-fluid rounded animacao3 d-none d-sm-block">	
+				<span class="sr-only">Artesanato</span>		
+				
+			</div>			
+		</div>
+
+	</section><!-- Fim Seção Imagens -->
+
+	<section id="conteudo"><!-- Secão Conteúdos -->
+		<div class="container mt-5">
+			<div class="row">
+
+				<!--- Barra Lateral -->
+				<div class="col-sm-3 bg-white rounded p-3 d-none d-sm-block order-3">
+					<h5>Especiais</h5>
+					<div class="p-3 borda-fundo">
+						<h6>Fazendo Cores</h6>
+						<hr>
+						<a href="">
+							<img src="img/parallax.jpeg" class="img-fluid">		
+							<span class="sr-only">Especial</span>					
+						</a>	
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. 
+						</blockquote>
+						<button class="btn btn-sm btn-info">Ler Mais...</button>								
+					</div>	
+					<div class="p-3 mt-2 borda-fundo">
+						<h6>Fazendo Cores</h6>
+						<hr>
+						<a href="">
+							<img src="img/parallax.jpeg" class="img-fluid">	
+							<span class="sr-only">Especial</span>						
+						</a>	
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. 
+						</blockquote>
+						<button class="btn btn-sm btn-info">Ler Mais...</button>								
+					</div>				
+				</div>
+				<!--- Fim Barra Lateral -->
+
+				<div class="col-sm-1 order-2"></div>
+
+				<!--- Postagens -->
+				<div class="col-sm-8 bg-white rounded p-3 order-1">
+					<article>
+						<h2 class="ml-4">Lorem Ipsum</h2>
+						<img src="img/produto.png" class="img-fluid border border-gray mb-3">
+						<p class="p-3">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<button class="btn btn-sm btn-info">Ler Mais...</button>
+						<hr>
+					</article>					
+					<article>
+						<h2 class="ml-4">Lorem Ipsum</h2>
+						<img src="img/produto.png" class="img-fluid border border-gray mb-3">
+						<p class="p-3">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<button class="btn btn-sm btn-info">Ler Mais...</button>
+						<hr>
+					</article>
+				</div>	
+			</div>
+		</div>
+	</section><!-- Fim Secão Conteúdos -->		
+
+		
+<footer id="rodape"><!-- Rodapé -->	
+	<div class="bg-white mt-5">
+		<div class="row bg-dark">
+			<div class="col-sm-6 p-5 text-white">
+				<h5>Bem Bolado</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>			
+			</div>
+			<div class="col-sm-6 p-5">
+				<div class="mb-4">
+					<span class="text-primary lead">O Blog:</span>
+					<ul class="navbar-nav">
+						<li>
+							<a href="">
+								<i class="fas fa-info mr-3"></i>
+								Sobre
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="far fa-envelope mr-1"></i>		
+								Contato
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fab fa-instagram mr-1"></i>
+								Instagram
+							</a>
+						</li>
+					</ul>
+				</div>
+					<span class="text-secondary">&copy; Copyright 2018-2019 Bem Bolado - Desenvolvido por Luan Fonseca &trade;</span>	
+				</div>
+		</div>
+	</div>	
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
