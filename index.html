@@ -24,10 +24,13 @@
 			<img src="img/logo.png" class="logo mt-2">
 			<span class="sr-only">Bem Bolado Artesanatos</span>
 		</div>
-		<hr class="mt-2 mb-0">
-		<div class="col-sm-12 justify-content-center"><!-- Inicio Navegação -->
+	</header>
+
+	<!-- Inicio Navegação -->
+	<nav>
+		<div class="col-sm-12 justify-content-center">
 			
-			<div class="navbar navbar-expand-md navbar-light bg-light-50 borda-redonda">
+			<div class="navbar navbar-expand-md navbar-light bg-light-50 borda-redonda mt-2 mb-2">
 					<!-- Botão Hamburguer -->
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
 						<span class="navbar-toggler-icon"></span>						
@@ -63,33 +66,35 @@
 						</button>
 					</form>			
 			</div>
-		</div><!-- Fim Navegação -->					
-		<hr class="mt-0"><!--Linha -->
-	</header><!-- Fim Cabecalho -->
+		</div>
+	</nav>
+		<!-- Fim Navegação -->
+	
 	
 	<section id="secao-img"><!-- Seção Imagens -->
 
 		<div class="container bg-white rounded ">	
-
-			<div class="row">
-				<div class="col-sm-12 d-flex justify-content-center mb-3">
-					<h1 class="p-2 sublinhado">Destaques</h1>
+			<main>
+				<div class="row">
+					<div class="col-sm-12 d-flex justify-content-center mb-3">
+						<h1 class="p-2 sublinhado">Destaques</h1>
+					</div>
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-12 p-3 d-flex justify-content-around">
-
-				<img src="img/artesanato1.jpg" class="img-inicial img-fluid rounded animacao1 d-none d-sm-block">
-				<span class="sr-only">Artesanato</span>
-						
-				<img src="img/ceramica.jpg" class="img-inicial img-fluid rounded animacao2"> <!--Imagem mobile  -->
-				<span class="sr-only">Artesanato</span>
+	
+				<div class="row">
+					<div class="col-sm-12 p-3 d-flex justify-content-around">
+	
+					<img src="img/artesanato1.jpg" alt="Artesanato" class="img-inicial img-fluid rounded animacao1 d-none d-sm-block">
+					<span class="sr-only">Artesanato</span>
 							
-				<img src="img/artesanato2.jpg" class="img-inicial img-fluid rounded animacao3 d-none d-sm-block">	
-				<span class="sr-only">Artesanato</span>		
-				
-			</div>			
+					<img src="img/ceramica.jpg" alt="Artesanato" class="img-inicial img-fluid rounded animacao2"> <!--Imagem mobile  -->
+					<span class="sr-only">Artesanato</span>
+								
+					<img src="img/artesanato2.jpg" alt="Artesanato" class="img-inicial img-fluid rounded animacao3 d-none d-sm-block">	
+					<span class="sr-only">Artesanato</span>		
+					
+				</div>
+			</main>						
 		</div>
 
 	</section><!-- Fim Seção Imagens -->
@@ -99,35 +104,36 @@
 			<div class="row">
 
 				<!--- Barra Lateral -->
-				<div class="col-sm-3 bg-white rounded p-3 d-none d-sm-block order-3">
-					<h5>Especiais</h5>
-					<div class="p-3 borda-fundo">
-						<h6>Fazendo Cores</h6>
-						<hr>
-						<a href="">
-							<img src="img/parallax.jpeg" class="img-fluid">		
-							<span class="sr-only">Especial</span>					
-						</a>	
-						<blockquote>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. 
-						</blockquote>
-						<button class="btn btn-sm btn-info">Ler Mais...</button>								
-					</div>	
-					<div class="p-3 mt-2 borda-fundo">
-						<h6>Fazendo Cores</h6>
-						<hr>
-						<a href="">
-							<img src="img/parallax.jpeg" class="img-fluid">	
-							<span class="sr-only">Especial</span>						
-						</a>	
-						<blockquote>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. 
-						</blockquote>
-						<button class="btn btn-sm btn-info">Ler Mais...</button>								
-					</div>				
-				</div>
+				<aside class="col-sm-3 bg-white rounded p-3 d-none d-sm-block order-3">
+						<h5>Especiais</h5>
+						<div class="p-3 borda-fundo">
+							<h6>Fazendo Cores</h6>
+							<hr>
+							<a href="">
+								<img src="img/parallax.jpeg" class="img-fluid">		
+								<span class="sr-only">Especial</span>					
+							</a>	
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. 
+							</p>
+							<button class="btn btn-sm btn-info">Ler Mais...</button>								
+						</div>	
+						<div class="p-3 mt-2 borda-fundo">
+							<h6>Fazendo Cores</h6>
+							<hr>
+							<a href="">
+								<img src="img/parallax.jpeg" class="img-fluid">	
+								<span class="sr-only">Especial</span>						
+							</a>	
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. 
+							</p>
+							<button class="btn btn-sm btn-info">Ler Mais...</button>								
+						</div>
+				</aside>
+				
 				<!--- Fim Barra Lateral -->
 
 				<div class="col-sm-1 order-2"></div>
@@ -212,7 +218,6 @@
 </footer>
 
 
-<!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

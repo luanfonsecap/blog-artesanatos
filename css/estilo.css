@@ -16,7 +16,7 @@ body {
 	overflow-x: hidden;
 }
 
-blockquote {
+div.borda-fundo p {
 	font-size: 0.9em;
 }
 
