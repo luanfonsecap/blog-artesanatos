@@ -1,0 +1,16 @@
+/* Header */
+.banner-logo {
+	background-color: #E51C6D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+.banner-logo img {
+	height: 150px;
+	width: 150px;
+	border: 2px solid white;
+	margin: 1em;
+	padding: .5em;
+}
