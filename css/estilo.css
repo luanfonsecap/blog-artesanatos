@@ -1,6 +1,21 @@
+/* Site */
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.woff);
+}
+
+body {
+	font-family: Montserrat, monospace;
+}
+
+.container {
+	
+}
+
 /* Header */
 .banner-logo {
 	background-color: #E51C6D;
+	background-image: url(../img/bg.jpg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -13,4 +28,55 @@
 	border: 2px solid white;
 	margin: 1em;
 	padding: .5em;
+}
+
+/* Navegação */
+.navegacao {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navegacao ul {
+	list-style: none;
+	display: flex;
+	width: 400px;
+	justify-content: space-around;
+}
+
+.navegacao a {
+	text-decoration: none;
+}
+
+.navegacao a:hover,
+.active {
+	border: .1em solid #E51C6D;
+	padding: .3em;
+	font-weight: bold;
+}
+
+
+.navegacao form {
+	margin-right: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.navegacao i {
+	background-color: #E51C6D;
+	padding: .1em;
+	border-radius: .1em;
+	border: .1em solid #E51C6D;
+	color: white;
+	cursor: pointer;
+}
+
+.navegacao input {
+	padding: .3em;
+	border-radius: .1em;
+	border-color: #E51C6D;
+}
+
+/* Destaques */
+.destaques {
+
 }
