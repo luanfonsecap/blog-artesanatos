@@ -1,0 +1,35 @@
+/* Destaques */
+.destaques {
+	height: 300px;
+	width: 70%;
+	background-color: white;
+}
+
+.destaques img {
+	width: 32%;
+	border-radius: $raio-suave;
+}
+
+.destaques img:nth-child(1) {
+	margin-left: none;
+}
+
+.destaques div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.destaques h2,
+.postagens h3 {
+	text-align: center;
+	text-decoration: underline;
+	color: $cor-principal;
+	letter-spacing: .1ch;
+}
+
+.destaques {
+	box-shadow: 7px 7px 15px $cor-auxiliar;
+	border-radius: .5em;
+	padding: .9em;
+	margin-top: 2em;
+}

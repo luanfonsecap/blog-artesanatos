@@ -1,0 +1,16 @@
+/* Header */
+.banner-logo {
+	background-color: $cor-secundaria;
+	background-image: url(../img/bg.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+.banner-logo img {
+	height: 200px;
+	width: 220px;
+	margin: $medida-padrao;
+	padding: .5em;
+}

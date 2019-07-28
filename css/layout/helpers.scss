@@ -1,0 +1,25 @@
+$raio-suave: .1em;
+$medida-padrao: 1em;
+$borda-suave: .1em;
+
+$cor-principal: #EA6298;
+$cor-secundaria: #E51C6D;
+$cor-auxiliar: #660C30;
+
+%border-post {
+	border-bottom: 2px solid $cor-secundaria; 	
+	border-bottom-left-radius: 3em;
+	border-bottom-right-radius: 3em;
+}
+
+%sombra-principal {
+	box-shadow: 5px 5px 10px $cor-auxiliar;
+}
+
+%borda-principal {
+	border: $borda-suave solid $cor-secundaria;
+}
+
+@mixin borda-img {
+	border: $borda-suave dashed $cor-auxiliar;
+}

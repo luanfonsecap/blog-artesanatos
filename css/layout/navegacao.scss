@@ -1,0 +1,48 @@
+/* Navegação */
+.navegacao {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	@extend %sombra-principal;
+}
+
+.navegacao ul {
+	list-style: none;
+	display: flex;
+	width: 400px;
+	justify-content: space-around;
+}
+
+.navegacao a {
+	text-decoration: none;
+}
+
+.navegacao a:hover,
+.active {
+	@extend %borda-principal;
+	padding: .3em;
+	font-weight: bold;
+}
+
+
+.navegacao form {
+	margin-right: $medida-padrao;
+	display: flex;
+	align-items: center;
+}
+
+.navegacao i {
+	background-color: $cor-secundaria;
+	/*Medida específica para o botão de pesquisa*/
+	padding: 0.1em;
+	border-radius: $raio-suave;
+	@extend %borda-principal;
+	color: white;
+	cursor: pointer;
+}
+
+.navegacao input {
+	padding: .3em;
+	border-radius: $raio-suave;
+	border-color: $cor-secundaria;
+}

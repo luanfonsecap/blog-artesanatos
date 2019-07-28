@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.postagens article, .box-especial {
+.box-especial, .postagens article {
   border-bottom: 2px solid #E51C6D;
   border-bottom-left-radius: 3em;
   border-bottom-right-radius: 3em; }
@@ -12,26 +12,76 @@
 .active, .navegacao i {
   border: 0.1em solid #E51C6D; }
 
-/* Site */
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.woff); }
-body {
-  font-family: Montserrat, monospace;
-  background-image: url(../img/background.jpg); }
+/* Especial */
+.especiais {
+  padding-top: 1.5em;
+  background-color: white; }
 
-main {
-  width: 90%;
+.area-especial {
+  width: 28%; }
+
+.box-especial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 2em; }
+
+.box-especial p {
+  width: 70%;
+  text-align: center; }
+
+.box-especial a {
+  text-decoration: none;
+  background-color: #EA6298;
+  color: white;
+  border-radius: .3em;
+  padding: .8em;
+  font-weight: bold; }
+
+.especiais div:nth-last-of-type(1) {
+  border-bottom: none; }
+
+.especiais h3 {
+  text-align: center;
+  color: #EA6298;
+  text-decoration: underline;
+  letter-spacing: .1ch;
+  font-size: 2em; }
+
+.box-especial h4 {
+  text-align: center;
+  color: #660C30; }
+
+/* Destaques */
+.destaques {
+  height: 300px;
+  width: 70%;
+  background-color: white; }
+
+.destaques img {
+  width: 32%;
+  border-radius: 0.1em; }
+
+.destaques img:nth-child(1) {
+  margin-left: none; }
+
+.destaques div {
   display: flex;
   justify-content: space-between; }
 
-.container {
-  width: 80%; }
+.destaques h2,
+.postagens h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: #EA6298;
+  letter-spacing: .1ch; }
 
-main,
-.container {
-  margin-left: auto;
-  margin-right: auto; }
+.destaques {
+  box-shadow: 7px 7px 15px #660C30;
+  border-radius: .5em;
+  padding: .9em;
+  margin-top: 2em; }
 
 /* Header */
 .banner-logo {
@@ -86,36 +136,6 @@ main,
   border-radius: 0.1em;
   border-color: #E51C6D; }
 
-/* Destaques */
-.destaques {
-  height: 300px;
-  width: 70%;
-  background-color: white; }
-
-.destaques img {
-  width: 32%;
-  border-radius: 0.1em; }
-
-.destaques img:nth-child(1) {
-  margin-left: none; }
-
-.destaques div {
-  display: flex;
-  justify-content: space-between; }
-
-.destaques h2,
-.postagens h3 {
-  text-align: center;
-  text-decoration: underline;
-  color: #EA6298;
-  letter-spacing: .1ch; }
-
-.destaques {
-  box-shadow: 7px 7px 15px #660C30;
-  border-radius: .5em;
-  padding: .9em;
-  margin-top: 2em; }
-
 /* Postagens */
 .postagens {
   display: flex;
@@ -167,45 +187,25 @@ main,
 .especiais img {
   width: 60%; }
 
-/* Especial */
-.especiais {
-  padding-top: 1.5em;
-  background-color: white; }
+/* Site */
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.woff); }
+body {
+  font-family: Montserrat, monospace;
+  background-image: url(../img/background.jpg); }
 
-.area-especial {
-  width: 28%; }
-
-.box-especial {
+main {
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  margin-bottom: 2em; }
+  justify-content: space-between; }
 
-.box-especial p {
-  width: 70%;
-  text-align: center; }
+.container {
+  width: 80%; }
 
-.box-especial a {
-  text-decoration: none;
-  background-color: #EA6298;
-  color: white;
-  border-radius: .3em;
-  padding: .8em;
-  font-weight: bold; }
-
-.especiais div:nth-last-of-type(1) {
-  border-bottom: none; }
-
-.especiais h3 {
-  text-align: center;
-  color: #EA6298;
-  text-decoration: underline;
-  letter-spacing: .1ch;
-  font-size: 2em; }
-
-.box-especial h4 {
-  text-align: center;
-  color: #660C30; }
+main,
+.container {
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=estilo.css.map */
