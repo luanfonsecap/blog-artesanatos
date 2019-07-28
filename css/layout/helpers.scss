@@ -2,10 +2,12 @@ $raio-suave: .1em;
 $medida-padrao: 1em;
 $borda-suave: .1em;
 
+//Paleta de cores do blog
 $cor-principal: #EA6298;
 $cor-secundaria: #E51C6D;
 $cor-auxiliar: #660C30;
 
+//Borda das publicações principais
 %border-post {
 	border-bottom: 2px solid $cor-secundaria; 	
 	border-bottom-left-radius: 3em;
