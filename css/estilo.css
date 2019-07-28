@@ -6,6 +6,7 @@
 
 body {
 	font-family: Montserrat, monospace;
+	background-image: url(../img/background.jpg);
 }
 
 main{
@@ -44,6 +45,7 @@ main{
 .navegacao {
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
 }
 
 .navegacao ul {
@@ -90,6 +92,7 @@ main{
 .destaques {
 	height: 300px;
 	width: 70%;
+	background-color: white;
 }
 
 .destaques img {
@@ -126,22 +129,54 @@ main{
 	display: flex;
 	flex-direction: column;
 	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: white;
 }
 
-.postagens p {
+.postagens h3 {
+	font-size: 2em;
+}
+
+.postagens article p {
 	width: 50%;
+
+}
+
+.postagens article a {
+	text-decoration: none;
+	background-color: #EA6298;
+	color: white;
+	border-radius: .3em;
+	padding: .8em;
+	font-weight: bold;
+}
+
+.postagens article a:hover {
+	background-color: #E51C6D;
+}
+
+.postagens article :nth-child(2) {
+	border: .1em dashed #660C30;
+	padding: .8em;
+}
+
+.postagens article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+	border-bottom: 2px solid #E51C6D; 	
+	border-bottom-left-radius: 3em	;
+	border-bottom-right-radius: 3em;
+	margin-bottom: 2em;
+}
+
+.postagens article:nth-last-of-type(1) {
+	border-bottom: none;
 }
 
 .area-postagens {
 	width: 60%;
-}
-
-.area-especial {
-	width: 28%;
-}
-
-.postagens article {
-	padding: 1em;
 }
 
 .postagens,
@@ -154,4 +189,56 @@ main{
 .postagens img,
 .especiais img {
 	width: 60%;
+}
+
+/* Especial */
+.especiais{
+	padding-top: 1.5em;
+	background-color: white;
+}
+
+.area-especial {
+	width: 28%;
+}
+
+.box-especial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+	border-bottom: 2px solid #E51C6D; 	
+	border-bottom-left-radius: 3em	;
+	border-bottom-right-radius: 3em;
+	margin-bottom: 2em;
+}
+
+.box-especial p {
+	width: 70%;
+	text-align: center;
+}
+
+.box-especial a {
+	text-decoration: none;
+	background-color: #EA6298;
+	color: white;
+	border-radius: .3em;
+	padding: .8em;
+	font-weight: bold;
+}
+
+.especiais div:nth-last-of-type(1) {
+	border-bottom: none;
+}
+
+.especiais h3 {
+	text-align: center;
+	color: #EA6298;
+	text-decoration: underline;
+	letter-spacing: .1ch;
+	font-size: 2em;
+}
+
+.box-especial h4 {
+	text-align: center;
+	color: #660C30;
 }
