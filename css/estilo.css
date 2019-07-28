@@ -6,12 +6,13 @@
 
 body {
 	font-family: Montserrat, monospace;
+
 }
 
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 80%;
 }
 
 /* Header */
@@ -81,6 +82,7 @@ body {
 /* Destaques */
 .destaques {
 	height: 300px;
+	width: 70%;
 }
 
 .destaques img {
@@ -95,4 +97,18 @@ body {
 .destaques div {
 	display: flex;
 	justify-content: space-between;
+}
+
+.destaques h2 {
+	text-align: center;
+	text-decoration: underline;
+	color: #EA6298;
+	letter-spacing: .1ch;
+}
+
+.destaques {
+	box-shadow: 5px 5px 10px #660C30;
+	border-radius: .5em;
+	padding: .9em;
+	margin-top: 2em;
 }
