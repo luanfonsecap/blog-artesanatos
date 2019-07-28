@@ -34,9 +34,8 @@ main{
 }
 
 .banner-logo img {
-	height: 150px;
-	width: 150px;
-	border: 2px solid white;
+	height: 200px;
+	width: 220px;
 	margin: 1em;
 	padding: .5em;
 }
@@ -118,7 +117,7 @@ main{
 }
 
 .destaques {
-	box-shadow: 5px 5px 10px #660C30;
+	box-shadow: 7px 7px 15px #660C30;
 	border-radius: .5em;
 	padding: .9em;
 	margin-top: 2em;
