@@ -9,7 +9,9 @@ body {
 }
 
 .container {
-	
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 }
 
 /* Header */
@@ -78,5 +80,19 @@ body {
 
 /* Destaques */
 .destaques {
+	height: 300px;
+}
 
+.destaques img {
+	width: 32%;
+	border-radius: .1em;
+}
+
+.destaques img:nth-child(1) {
+	margin-left: none;
+}
+
+.destaques div {
+	display: flex;
+	justify-content: space-between;
 }
