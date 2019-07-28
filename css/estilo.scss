@@ -1,3 +1,30 @@
+$raio-suave: .1em;
+$medida-padrao: 1em;
+$borda-suave: .1em;
+
+$cor-principal: #EA6298;
+$cor-secundaria: #E51C6D;
+$cor-auxiliar: #660C30;
+
+%border-post {
+	border-bottom: 2px solid $cor-secundaria; 	
+	border-bottom-left-radius: 3em;
+	border-bottom-right-radius: 3em;
+}
+
+%sombra-principal {
+	box-shadow: 5px 5px 10px $cor-auxiliar;
+}
+
+%borda-principal {
+	border: $borda-suave solid $cor-secundaria;
+}
+
+@mixin borda-img {
+	border: $borda-suave dashed $cor-auxiliar;
+}
+
+
 /* Site */
 @font-face {
 	font-family: Montserrat;
@@ -10,22 +37,24 @@ body {
 }
 
 main{
-	margin-left: auto;
-	margin-right: auto;
 	width: 90%;
 	display: flex;
 	justify-content: space-between;	
 }
 
 .container {
+	width: 80%;
+}
+
+main, 
+.container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
 }
 
 /* Header */
 .banner-logo {
-	background-color: #E51C6D;
+	background-color: $cor-secundaria;
 	background-image: url(../img/bg.jpg);
 	display: flex;
 	justify-content: center;
@@ -36,7 +65,7 @@ main{
 .banner-logo img {
 	height: 200px;
 	width: 220px;
-	margin: 1em;
+	margin: $medida-padrao;
 	padding: .5em;
 }
 
@@ -45,7 +74,7 @@ main{
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
-	box-shadow: 5px 5px 10px #660C30;
+	@extend %sombra-principal;
 }
 
 .navegacao ul {
@@ -61,31 +90,32 @@ main{
 
 .navegacao a:hover,
 .active {
-	border: .1em solid #E51C6D;
+	@extend %borda-principal;
 	padding: .3em;
 	font-weight: bold;
 }
 
 
 .navegacao form {
-	margin-right: 1em;
+	margin-right: $medida-padrao;
 	display: flex;
 	align-items: center;
 }
 
 .navegacao i {
-	background-color: #E51C6D;
-	padding: .1em;
-	border-radius: .1em;
-	border: .1em solid #E51C6D;
+	background-color: $cor-secundaria;
+	/*Medida específica para o botão de pesquisa*/
+	padding: 0.1em;
+	border-radius: $raio-suave;
+	@extend %borda-principal;
 	color: white;
 	cursor: pointer;
 }
 
 .navegacao input {
 	padding: .3em;
-	border-radius: .1em;
-	border-color: #E51C6D;
+	border-radius: $raio-suave;
+	border-color: $cor-secundaria;
 }
 
 /* Destaques */
@@ -97,7 +127,7 @@ main{
 
 .destaques img {
 	width: 32%;
-	border-radius: .1em;
+	border-radius: $raio-suave;
 }
 
 .destaques img:nth-child(1) {
@@ -113,12 +143,12 @@ main{
 .postagens h3 {
 	text-align: center;
 	text-decoration: underline;
-	color: #EA6298;
+	color: $cor-principal;
 	letter-spacing: .1ch;
 }
 
 .destaques {
-	box-shadow: 7px 7px 15px #660C30;
+	box-shadow: 7px 7px 15px $cor-auxiliar;
 	border-radius: .5em;
 	padding: .9em;
 	margin-top: 2em;
@@ -139,12 +169,11 @@ main{
 
 .postagens article p {
 	width: 50%;
-
 }
 
 .postagens article a {
 	text-decoration: none;
-	background-color: #EA6298;
+	background-color: $cor-principal;
 	color: white;
 	border-radius: .3em;
 	padding: .8em;
@@ -152,11 +181,11 @@ main{
 }
 
 .postagens article a:hover {
-	background-color: #E51C6D;
+	background-color: $cor-secundaria;
 }
 
 .postagens article :nth-child(2) {
-	border: .1em dashed #660C30;
+	@include borda-img;
 	padding: .8em;
 }
 
@@ -164,10 +193,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1em;
-	border-bottom: 2px solid #E51C6D; 	
-	border-bottom-left-radius: 3em	;
-	border-bottom-right-radius: 3em;
+	padding: $medida-padrao;
+	@extend %border-post;
 	margin-bottom: 2em;
 }
 
@@ -181,7 +208,7 @@ main{
 
 .postagens,
 .especiais {
-	box-shadow: 5px 5px 10px #660C30;
+	@extend %sombra-principal;
 	border-radius: .5em;
 	margin-top: 2em;
 }
@@ -205,10 +232,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1em;
-	border-bottom: 2px solid #E51C6D; 	
-	border-bottom-left-radius: 3em	;
-	border-bottom-right-radius: 3em;
+	padding: $medida-padrao;
+	@extend %border-post;
 	margin-bottom: 2em;
 }
 
@@ -219,7 +244,7 @@ main{
 
 .box-especial a {
 	text-decoration: none;
-	background-color: #EA6298;
+	background-color: $cor-principal;
 	color: white;
 	border-radius: .3em;
 	padding: .8em;
@@ -232,7 +257,7 @@ main{
 
 .especiais h3 {
 	text-align: center;
-	color: #EA6298;
+	color: $cor-principal;
 	text-decoration: underline;
 	letter-spacing: .1ch;
 	font-size: 2em;
@@ -240,5 +265,5 @@ main{
 
 .box-especial h4 {
 	text-align: center;
-	color: #660C30;
+	color: $cor-auxiliar;
 }
