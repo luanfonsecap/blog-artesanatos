@@ -36,7 +36,7 @@ main,
 /* Header */
 .banner-logo {
   background-color: #E51C6D;
-  background-image: url(../img/bg.jpg);
+  background-image: linear-gradient(90deg, #E51C6D, #EA6298);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,97 +208,77 @@ main,
   text-align: center;
   color: #660C30; }
 
-  /* Mobile */
-
+/* Mobile */
 @media (max-width: 768px) {
+  .banner-logo {
+    height: auto; }
 
-    .banner-logo {
-      height: auto;
-    }
-
-    .banner-logo img {
-      margin: 0;
-      padding: 0;
-      margin-left: 7%;
-    }
+  .banner-logo img {
+    margin: 0;
+    padding: 0;
+    margin-left: 7%; }
 
   .navegacao {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .navegacao ul {
     flex-direction: column;
-    text-align: center;
-  }
+    text-align: center; }
+
   .destaques {
     height: auto;
     width: auto;
     margin: 0;
-    margin-top: 3em;
-  }
+    margin-top: 3em; }
 
   .destaques img {
     width: 100%;
     border-radius: 0.3em;
-    margin-bottom: .5em;
-  }
+    margin-bottom: .5em; }
 
   .destaques div {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .postagens {
     background-color: transparent;
-    box-shadow: none;
-  }
+    box-shadow: none; }
 
   .postagens article {
     box-shadow: 5px 5px 10px #660C30;
-    border-top-left-radius:  3em;
-    border-top-right-radius:  3em;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
     margin-bottom: 2em;
-    background-color: white;
-  }
+    background-color: white; }
 
   .postagens article p {
-    width: auto;
-  }
+    width: auto; }
 
   .postagens article a {
-    padding: .5em;
-  }
+    padding: .5em; }
 
-  .area-postagens, 
+  .area-postagens,
   .area-especial {
-    width: auto; 
-    margin: 0; 
-  }
-  
+    width: auto;
+    margin: 0; }
+
   .especiais {
-    display: none;
-  }
+    display: none; }
 
   main {
     width: auto;
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .active {
-    border: none;
-  }
+    border: none; }
 
   .navegacao ul {
-    width: auto;
-  }
+    width: auto; }
 
   .navegacao form {
     justify-content: space-between;
-    margin-right: 0;
-  }
+    margin-right: 0; }
 
   .navegacao input {
-    flex-grow: 1;
-  }
-}
+    flex-grow: 1; } }
 
 /*# sourceMappingURL=estilo.css.map */
