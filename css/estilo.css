@@ -279,6 +279,10 @@ main,
     margin-right: 0; }
 
   .navegacao input {
-    flex-grow: 1; } }
+    flex-grow: 1; }
+
+  .nav {
+    position: relative;
+    left: -9999px; } }
 
 /*# sourceMappingURL=estilo.css.map */
