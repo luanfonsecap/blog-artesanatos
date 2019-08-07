@@ -22,6 +22,11 @@ $cor-auxiliar: #660C30;
 	border: $borda-suave solid $cor-secundaria;
 }
 
+%borda-detalhe {
+	border-top-left-radius:  3em;
+	border-top-right-radius:  3em;
+}
+
 @mixin borda-img {
 	border: $borda-suave dashed $cor-auxiliar;
 }

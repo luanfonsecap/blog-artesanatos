@@ -2,6 +2,8 @@
 .especiais{
 	padding-top: 1.5em;
 	background-color: white;
+	border-top-left-radius:  3em;
+	border-top-right-radius:  3em;
 }
 
 .area-especial {
@@ -46,4 +48,10 @@
 .box-especial h4 {
 	text-align: center;
 	color: $cor-auxiliar;
+}
+
+@media (max-width: 768px) {
+	.especiais {
+		
+	}
 }

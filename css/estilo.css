@@ -48,6 +48,14 @@ main,
   margin: 1em;
   padding: .5em; }
 
+@media (max-width: 768px) {
+  .banner-logo {
+    height: auto; }
+
+  .banner-logo img {
+    margin: 0;
+    padding: 0;
+    margin-left: 7%; } }
 /* Navega├º├úo */
 .navegacao {
   display: flex;
@@ -86,6 +94,50 @@ main,
   border-radius: 0.1em;
   border-color: #E51C6D; }
 
+@media (max-width: 768px) {
+  .navegacao {
+    flex-direction: column; }
+
+  .navegacao ul {
+    flex-direction: column;
+    text-align: center; }
+
+  .active {
+    border: none; }
+
+  .navegacao ul {
+    width: auto; }
+
+  .navegacao form {
+    justify-content: space-between;
+    margin-right: 0; }
+
+  .navegacao input {
+    flex-grow: 1; }
+
+  .nav {
+    background: #f0f0f0;
+    padding: 1em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out; }
+
+  .menu-ativo {
+    left: 0; }
+
+  .abrir-menu {
+    display: flex;
+    justify-content: center; } }
+@media not all and (max-width: 768px) {
+  .abrir-menu,
+  .fechar-menu {
+    display: none; } }
 /* Destaques */
 .destaques {
   height: 300px;
@@ -116,6 +168,37 @@ main,
   padding: .9em;
   margin-top: 2em; }
 
+@media (max-width: 768px) {
+  .destaques {
+    height: auto;
+    width: auto;
+    margin: 0;
+    margin-top: 3em; }
+
+  .destaques img {
+    width: 100%;
+    border-radius: 0.3em;
+    margin-bottom: .5em; }
+
+  .destaques div {
+    flex-direction: column; }
+
+  .postagens {
+    background-color: transparent !important;
+    box-shadow: none; }
+
+  .postagens article {
+    box-shadow: 5px 5px 10px #660C30;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    margin-bottom: 2em;
+    background-color: white; }
+
+  .postagens article p {
+    width: auto; }
+
+  .postagens article a {
+    padding: .5em; } }
 /* Postagens */
 .postagens {
   display: flex;
@@ -170,7 +253,9 @@ main,
 /* Especial */
 .especiais {
   padding-top: 1.5em;
-  background-color: white; }
+  background-color: white;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em; }
 
 .area-especial {
   width: 28%; }
@@ -208,107 +293,17 @@ main,
   text-align: center;
   color: #660C30; }
 
-/* Mobile */
 @media (max-width: 768px) {
-  .banner-logo {
-    height: auto; }
-
-  .banner-logo img {
-    margin: 0;
-    padding: 0;
-    margin-left: 7%; }
-
-  .navegacao {
-    flex-direction: column; }
-
-  .navegacao ul {
-    flex-direction: column;
-    text-align: center; }
-
-  .destaques {
-    height: auto;
-    width: auto;
-    margin: 0;
-    margin-top: 3em; }
-
-  .destaques img {
-    width: 100%;
-    border-radius: 0.3em;
-    margin-bottom: .5em; }
-
-  .destaques div {
-    flex-direction: column; }
-
-  .postagens {
-    background-color: transparent;
-    box-shadow: none; }
-
-  .postagens article {
-    box-shadow: 5px 5px 10px #660C30;
-    border-top-left-radius: 3em;
-    border-top-right-radius: 3em;
-    margin-bottom: 2em;
-    background-color: white; }
-
-  .postagens article p {
-    width: auto; }
-
-  .postagens article a {
-    padding: .5em; }
-
   .area-postagens,
   .area-especial {
     width: auto;
     margin: 0; }
 
-  .especiais {
-    display: none; }
-
   main {
     width: auto;
     flex-direction: column; }
 
-  .active {
-    border: none; }
-
-  .navegacao ul {
-    width: auto; }
-
-  .navegacao form {
-    justify-content: space-between;
-    margin-right: 0; }
-
-  .navegacao input {
-    flex-grow: 1; }
-
-  .nav {
-    background: #f0f0f0;
-    padding: 1em;
-    margin: 0;
-    height: 100%;
-    width: 90%;
-    max-width: 320px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -90%;
-    transition: left 0.3s ease-out; }
-
-  .menu-ativo {
-    left: 0; }
-
-  .navegacao .menu-aitvo::after {
-    content: '';
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4); } }
-@media not all and (max-width: 768px) {
-  .abrir-menu,
-  .fechar-menu {
-    display: none; } }
+  html {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=estilo.css.map */

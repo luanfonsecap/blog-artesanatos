@@ -46,3 +46,63 @@
 	border-radius: $raio-suave;
 	border-color: $cor-secundaria;
 }
+
+@media (max-width: 768px) {
+
+  .navegacao {
+    flex-direction: column;
+  }
+
+  .navegacao ul {
+    flex-direction: column;
+    text-align: center;
+	}
+  .active {
+    border: none;
+  }
+
+  .navegacao ul {
+    width: auto;
+  }
+
+  .navegacao form {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .navegacao input {
+    flex-grow: 1;
+  }
+
+  .nav {
+    background: #f0f0f0;
+    padding: 1em;
+    margin: 0;
+
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out;
+  }
+  
+  .menu-ativo {
+    left: 0;
+  }
+
+  .abrir-menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media not all and (max-width: 768px) {
+  .abrir-menu,
+  .fechar-menu {
+      display: none;
+  }
+}
