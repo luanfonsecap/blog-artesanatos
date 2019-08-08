@@ -42,10 +42,6 @@
 	margin-bottom: 2em;
 }
 
-.postagens article:nth-last-of-type(1) {
-	border-bottom: none;
-}
-
 .area-postagens {
 	width: 60%;
 }
@@ -60,6 +56,12 @@
 .postagens img,
 .especiais img {
 	width: 60%;
+}
+
+@media (min-width: 768px) {
+	.postagens article:nth-last-of-type(1) {
+		border-bottom: none;
+	}
 }
 
 @media (max-width: 768px) {
@@ -83,4 +85,5 @@
 	.postagens article a {
 		padding: .5em;
 	}
+	
 }
