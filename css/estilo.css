@@ -115,6 +115,11 @@ main,
   .navegacao input {
     flex-grow: 1; }
 
+  .navegacao i {
+    width: 100%;
+    text-align: center;
+    margin: .1em; }
+
   .nav {
     background: #f0f0f0;
     padding: 1em;
@@ -176,29 +181,13 @@ main,
     margin-top: 3em; }
 
   .destaques img {
-    width: 100%;
+    width: 95%;
+    align-self: center;
     border-radius: 0.3em;
     margin-bottom: .5em; }
 
   .destaques div {
-    flex-direction: column; }
-
-  .postagens {
-    background-color: transparent !important;
-    box-shadow: none; }
-
-  .postagens article {
-    box-shadow: 5px 5px 10px #660C30;
-    border-top-left-radius: 3em;
-    border-top-right-radius: 3em;
-    margin-bottom: 2em;
-    background-color: white; }
-
-  .postagens article p {
-    width: auto; }
-
-  .postagens article a {
-    padding: .5em; } }
+    flex-direction: column; } }
 /* Postagens */
 .postagens {
   display: flex;
@@ -250,6 +239,23 @@ main,
 .especiais img {
   width: 60%; }
 
+@media (max-width: 768px) {
+  .postagens {
+    background-color: transparent !important;
+    box-shadow: none; }
+
+  .postagens article {
+    box-shadow: 2px 2px 5px #660C30;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    margin-bottom: 2em;
+    background-color: white; }
+
+  .postagens article p {
+    width: auto; }
+
+  .postagens article a {
+    padding: .5em; } }
 /* Especial */
 .especiais {
   padding-top: 1.5em;

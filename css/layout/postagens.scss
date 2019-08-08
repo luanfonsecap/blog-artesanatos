@@ -61,3 +61,26 @@
 .especiais img {
 	width: 60%;
 }
+
+@media (max-width: 768px) {
+	.postagens {
+		background-color: transparent!important;
+		box-shadow: none;
+	}
+
+	.postagens article {
+		box-shadow: 2px 2px 5px #660C30;
+		border-top-left-radius:  3em;
+		border-top-right-radius:  3em;
+		margin-bottom: 2em;
+		background-color: white;
+	}
+
+	.postagens article p {
+		width: auto;
+	}
+
+	.postagens article a {
+		padding: .5em;
+	}
+}

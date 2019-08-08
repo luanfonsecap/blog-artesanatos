@@ -44,7 +44,8 @@
   }
 
   .destaques img {
-    width: 100%;
+    width: 95%;
+    align-self: center;
     border-radius: 0.3em;
     margin-bottom: .5em;
   }
@@ -52,25 +53,4 @@
   .destaques div {
     flex-direction: column;
 	}
-	
-	.postagens {
-    background-color: transparent!important;
-    box-shadow: none;
-  }
-
-  .postagens article {
-    box-shadow: 5px 5px 10px #660C30;
-    border-top-left-radius:  3em;
-    border-top-right-radius:  3em;
-    margin-bottom: 2em;
-    background-color: white;
-  }
-
-  .postagens article p {
-    width: auto;
-  }
-
-  .postagens article a {
-    padding: .5em;
-  }
 }
