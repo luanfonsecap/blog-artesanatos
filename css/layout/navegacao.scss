@@ -1,16 +1,16 @@
 /* Navegação */
 .navegacao {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	background-color: white;
-	@extend %sombra-principal;
+  @extend %sombra-principal;
 }
 
 .navegacao ul {
 	list-style: none;
 	display: flex;
-	width: 400px;
-	justify-content: space-around;
+  justify-content: space-around;
+  flex-basis: 400px;
 }
 
 .navegacao a {
@@ -56,13 +56,18 @@
   .navegacao ul {
     flex-direction: column;
     text-align: center;
-	}
+    justify-content: start;
+    a {
+      background-color: white;
+      font-size: 1.1em;
+      border-radius: 5px;
+      padding: .5em;
+      width: 1em;
+    }
+  }
+  
   .active {
     border: none;
-  }
-
-  .navegacao ul {
-    width: auto;
   }
 
   .navegacao form {
@@ -84,9 +89,10 @@
     background: #f0f0f0;
     padding: 1em;
     margin: 0;
+    box-shadow: 5px 5px 10px $cor-auxiliar;
 
     height: 100%;
-    width: 90%;
+    width: 55%;
     max-width: 320px;
 
     position: fixed;
@@ -94,8 +100,34 @@
     top: 0;
     left: -90%;
     transition: left 0.3s ease-out;
+    
+    background-color: $cor-principal;
+    background-image: linear-gradient(to top, #E51C6D, #EA6298);
+
+    button + li {
+      margin-top: 5em;
+    }
+
+    button {
+      border: none;
+      background: none;
+      align-self: start;
+
+      i {
+        background-color: $cor-auxiliar;
+        border: none;
+      }
+    }
+
+    li {
+      margin: 2em;
+    }
+
+    a {
+      font-weight: bold;
+    }
   }
-  
+
   .menu-ativo {
     left: 0;
   }

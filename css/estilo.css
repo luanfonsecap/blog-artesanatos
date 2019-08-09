@@ -59,14 +59,14 @@ main,
 /* Navega├º├úo */
 .navegacao {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: white; }
 
 .navegacao ul {
   list-style: none;
   display: flex;
-  width: 400px;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-basis: 400px; }
 
 .navegacao a {
   text-decoration: none; }
@@ -100,13 +100,17 @@ main,
 
   .navegacao ul {
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    justify-content: start; }
+    .navegacao ul a {
+      background-color: white;
+      font-size: 1.1em;
+      border-radius: 5px;
+      padding: .5em;
+      width: 1em; }
 
   .active {
     border: none; }
-
-  .navegacao ul {
-    width: auto; }
 
   .navegacao form {
     justify-content: space-between;
@@ -124,14 +128,30 @@ main,
     background: #f0f0f0;
     padding: 1em;
     margin: 0;
+    box-shadow: 5px 5px 10px #660C30;
     height: 100%;
-    width: 90%;
+    width: 55%;
     max-width: 320px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: -90%;
-    transition: left 0.3s ease-out; }
+    transition: left 0.3s ease-out;
+    background-color: #EA6298;
+    background-image: linear-gradient(to top, #E51C6D, #EA6298); }
+    .nav button + li {
+      margin-top: 5em; }
+    .nav button {
+      border: none;
+      background: none;
+      align-self: start; }
+      .nav button i {
+        background-color: #660C30;
+        border: none; }
+    .nav li {
+      margin: 2em; }
+    .nav a {
+      font-weight: bold; }
 
   .menu-ativo {
     left: 0; }
