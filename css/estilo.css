@@ -319,6 +319,31 @@ main,
   text-align: center;
   color: #660C30; }
 
+footer {
+  display: flex;
+  background-color: #EA6298;
+  justify-content: space-around; }
+  footer img {
+    width: 15%;
+    margin: 2em; }
+
+span {
+  color: white;
+  align-self: center;
+  margin-bottom: 3.5em; }
+
+.lista-rodape {
+  list-style: none; }
+  .lista-rodape h3 {
+    color: white; }
+  .lista-rodape h3 + li {
+    margin-top: 0; }
+  .lista-rodape li {
+    padding: .5em; }
+  .lista-rodape a {
+    text-decoration: none;
+    color: white; }
+
 @media (max-width: 768px) {
   .area-postagens,
   .area-especial {

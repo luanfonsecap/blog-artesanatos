@@ -1,0 +1,37 @@
+footer {
+  display: flex;
+  background-color: $cor-principal;
+  justify-content: space-around;
+
+  img {
+    width: 15%;
+    margin: 2em;
+  }
+}
+
+span {
+  color: white;
+  align-self: center;
+  margin-bottom: 3.5em;
+}
+
+.lista-rodape {
+  list-style: none;
+
+  h3 {
+    color: white;
+  }
+  
+  h3 + li {
+    margin-top: 0;
+  }
+
+  li {
+    padding: .5em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
