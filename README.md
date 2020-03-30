@@ -1,4 +1,18 @@
-# blog-artesanatos
-Projeto de página inicial para um blog de artesanatos, versão aprimorada do primeiro projeto.
+![Icone do Blog](https://github.com/luanfonsecap/blog-artesanatos/blob/master/src/img/icon-head.png?raw=true)
 
-Foi utilizado nessa 3° versão apenas HTML5, CSS3 puro e o Normalize CSS.
+---
+# Blog Artesanatos
+
+Projeto de página inicial de um blog de artesanatos fictício.
+
+---
+## Projeto
+
+Objetivo de práticar os conhecimentos adiquiridos no estudo do pré processador CSS Sass e automação de tarefas com o Gulp.
+Foco na performance de carregamento da página.
+
+---
+### Tecnologias utilizadas
+
+* Sass
+* Gulp
