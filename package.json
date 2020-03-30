@@ -4,7 +4,7 @@
   "description": "Projeto de página inicial para um blog de artesanatos, versão aprimorada do primeiro projeto.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
     "url": "https://github.com/luanfonsecap/blog-artesanatos/issues"
   },
   "homepage": "https://github.com/luanfonsecap/blog-artesanatos#readme",
-  "dependencies": {
-    "gulp": "^4.0.2"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^7.1.0"
   }
 }

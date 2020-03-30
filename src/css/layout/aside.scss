@@ -1,0 +1,57 @@
+/* Especial */
+.especiais{
+	padding-top: 1.5em;
+	background-color: white;
+	border-top-left-radius:  3em;
+	border-top-right-radius:  3em;
+}
+
+.area-especial {
+	width: 28%;
+}
+
+.box-especial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $medida-padrao;
+	@extend %border-post;
+	margin-bottom: 2em;
+}
+
+.box-especial p {
+	width: 70%;
+	text-align: center;
+}
+
+.box-especial a {
+	text-decoration: none;
+	background-color: $cor-principal;
+	color: white;
+	border-radius: .3em;
+	padding: .8em;
+	font-weight: bold;
+}
+
+.especiais div:nth-last-of-type(1) {
+	border-bottom: none;
+}
+
+.especiais h3 {
+	text-align: center;
+	color: $cor-principal;
+	text-decoration: underline;
+	letter-spacing: .1ch;
+	font-size: 2em;
+}
+
+.box-especial h4 {
+	text-align: center;
+	color: $cor-auxiliar;
+}
+
+@media (max-width: 768px) {
+	.especiais {
+		
+	}
+}
