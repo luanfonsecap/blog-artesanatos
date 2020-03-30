@@ -1,0 +1,23 @@
+{
+  "name": "blog-artesanatos",
+  "version": "1.0.0",
+  "description": "Projeto de página inicial para um blog de artesanatos, versão aprimorada do primeiro projeto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanfonsecap/blog-artesanatos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanfonsecap/blog-artesanatos/issues"
+  },
+  "homepage": "https://github.com/luanfonsecap/blog-artesanatos#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
