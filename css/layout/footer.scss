@@ -5,6 +5,7 @@ footer {
 
   img {
     width: 15%;
+    min-width: 200px;
     margin: 2em;
   }
 }
@@ -17,6 +18,7 @@ span {
 
 .lista-rodape {
   list-style: none;
+  padding: 0;
 
   h3 {
     color: white;
